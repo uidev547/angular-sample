@@ -1,0 +1,13 @@
+{
+  "name": "backbone-contact-manager",
+  "authors": [
+    "Dmytro Yarmak <dmytroyarmak@gmail.com>"
+  ],
+  "description": "Simple Backbone.js example application",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15"
+  }
+}
