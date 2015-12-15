@@ -53,6 +53,8 @@ app.service( 'data', function() {
 
       }
     ];
+
+    this.counter = 6;
     
 } )  
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -98,8 +100,9 @@ $stateProvider
               e.preventDefault();
               if( $scope.addContactForm.$valid ) {
                 $scope.item.src = getRandom();
-                $scope.id = data.counter;
                 data.counter++;
+                $scope.item.id = data.counter;
+                
                 data.contacts.push( $scope.item );
                 $state.go( 'contacts' ); 
               }
